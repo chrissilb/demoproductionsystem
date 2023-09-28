@@ -25,8 +25,7 @@ public class ProductionLineImpl {
    @Expansion private ProductionLineState state;
    @Expansion private PLRole role;
    …
-   @Tick(activateMethod="startTick", deactivateMethod="stopTick", 
-      suspendMethod="suspendTick", resumeMethod="resumeTick")
+   @Tick(activateMethod="startTick", deactivateMethod="stopTick", suspendMethod="suspendTick", resumeMethod="resumeTick")
 
    public void tick() {
       System.out.println("ProductionLine.tick(): " + thiz);
