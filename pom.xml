@@ -63,7 +63,7 @@
 				<configuration>
 					<!--<inputFolder>src/main/java</inputFolder>-->
 					<!--<basePackageName>de.gwasch.code.demoproductionsystem</basePackageName>-->
-					<!--<outputFolder>src/main/gen</outputFolder>-->
+					<!--<outputFolder>target/generated-sources</outputFolder>-->
 				</configuration>
 				<executions>
 					<execution>
