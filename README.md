@@ -10,7 +10,7 @@ Shows especially:
 ## Highlights
 A production system and its production lines proactively observe their environment via Ticks. They find their optimal workload this way:
 
-<img src="pics/productionsystem1.png" width="600" />
+<img src="pics/productionsystem1.gif" width="600" />
 
 <img src="pics/productionsystem2.png" width="600" />
 
