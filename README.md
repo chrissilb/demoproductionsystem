@@ -34,6 +34,22 @@ public class ProductionLineImpl {
 }
 ```
 
+If PLRole of a ProductionLine is set to PLInactive an invocation of pl.start() leads to this:
+
+```Java
+@Service(type=PLInactive.class, inherits=PLRole.class)
+public class PLInactiveImpl { 
+
+   @Thiz
+   private PLInactive thiz;
+
+   public void start() {
+      thiz.getProductionLine().setRole(PLIdle.class);
+      thiz.getProductionLine().getProductionSystem().registerProductionLine(thiz.getProductionLine());
+   }
+}
+```
+
 ## Installation
 See https://github.com/chrissilb/escframework#installation
 
