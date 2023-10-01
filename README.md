@@ -53,6 +53,8 @@ public class PLInactiveImpl {
 ## Installation
 See https://github.com/chrissilb/escframework#installation
 
+The project is not compile-clean until "Maven generate-sources" is executed in order to generate interfaces.
+
 
 ## Usage
 See https://gwasch.de/escframework.php - "Folien" (only available in German so far)
