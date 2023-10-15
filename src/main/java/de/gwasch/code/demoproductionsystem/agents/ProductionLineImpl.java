@@ -13,7 +13,6 @@ import de.gwasch.code.escframework.components.annotations.Base;
 import de.gwasch.code.escframework.components.annotations.Expansion;
 import de.gwasch.code.escframework.components.annotations.Service;
 import de.gwasch.code.escframework.components.annotations.Thiz;
-import de.gwasch.code.escframework.components.annotations.Tick;
 import de.gwasch.code.escframework.components.utils.InstanceAllocator;
 
 @Service(type=ProductionLine.class, inherits=ProductionAgent.class)
