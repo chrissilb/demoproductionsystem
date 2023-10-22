@@ -51,9 +51,9 @@ public class LogFilterTableModel extends AbstractTableModel {
 		Filter filter = logFilters.get(row);
 		switch (col) {
 			case 0: return (row + 1);
-			case 1:	return filter.pattern;
-			case 2:	return filter.allow;
-			case 3:	return filter.deactivated;
+			case 1:	return filter.getPattern();
+			case 2:	return filter.getAllow();
+			case 3:	return filter.getDeactivated();
 			default: return null;
 		}
 	}
@@ -65,9 +65,9 @@ public class LogFilterTableModel extends AbstractTableModel {
 	public void setValueAt(Object value, int row, int col) {
 		Filter filter = logFilters.get(row);
 		switch (col) {
-			case 1:	filter.pattern = (String)value; break;
-			case 2:	filter.allow = (Boolean)value; break;
-			case 3:	filter.deactivated = (Boolean)value; break;
+			case 1:	filter.setPattern((String)value); break;
+			case 2:	filter.setAllow((Boolean)value); break;
+			case 3:	filter.setDeactivated((Boolean)value); break;
 		}
 		fireTableRowsUpdated(row, row);
 	}
